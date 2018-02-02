@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- para crear una leyenda o pie de foto -->
+    <!-- <figcaption>Imagen de Perro</figcaption> -->
+                                        <!-- con el 100% en width indicamos que la imagen siempre
+                                        ocupara el 100% del espacio en el que se encuentra -->
+    <!-- <img src="img/perro.jpg" alt="perro" width="100%"> -->
+    <picture>
+      <source media="(min-width: 768px)" srcset="img/perro.jpg">
+        <source src="(min-width: 480px)" srcset="img/gato.jpg">
+          <img src="img/pajaro.jpg" alt="Perro">
+    </picture>
+  </body>
+</html>

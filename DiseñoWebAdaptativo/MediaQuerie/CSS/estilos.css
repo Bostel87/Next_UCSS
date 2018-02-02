@@ -1,0 +1,55 @@
+@media print {
+  /* sirve para acoplar la impresion y salga todo el contenido */
+  img{
+    width: 100%;
+  }
+  /* centra el texto mario bros cuando este va a salir a impresion */
+  h1{
+    text-align: center;
+  }
+}
+
+/* haremos que cuando el usuario este visualizando el sitio el titulo mario bros se encuentre aliniado a la derecha
+vamos a usar los media queries para generar las condiciones necesarias para esto*/
+@media screen {
+  h1{
+    text-align: right;
+  }
+}
+
+/* Fundamentos del diseno adapatativo es que nuestro sitio pueda ser visualizado desde cualquier dispositivo */
+/* Media querie para celulares */
+@media (max-width:420px) {
+  p{
+    color: red;
+  }
+}
+/* media querie para tablets */
+@media (min-width:421px) and (max-width:720px){
+  p{
+    color: blue;
+  }
+}
+/* media querie para computadora */
+@media (min-width:720px) {
+  p{
+    color: green;
+  }
+}
+/* img
+{
+    width: 300px;
+    height: 300px;
+}
+p
+{
+    font-size: 8px;
+}
+footer
+{
+    color: blue;
+}
+h2
+{
+    word-spacing: 300px;
+} */
