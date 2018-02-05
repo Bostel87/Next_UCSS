@@ -1,0 +1,32 @@
+div {
+    border: 1px solid black;
+}
+
+#contenedor {
+  margin-top: 100px;
+  margin-left: 100px;
+  width: 300px;
+  height: 300px;
+  perspective: 50px;
+}
+
+
+#transformado {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  /* transform: translate(-80px, -120px); */
+  /* Cuando necesitamos trasladar un elemento en un solo eje */
+  /* transform: translateZ(5px); */
+  /* none para retornar el elemento a su posicion original */
+
+  /* Tambien podemos trasladar elementos simultaneamente en los 3 ejes con el metodo transalate3d */
+  /* Recibe 3 parametros
+  1.- indica el despazamiento en el eje X
+  2.- indica el despazamiento en el eje Y
+  3.- indica el despazamiento en el eje Z*/
+
+  transform: translate3d(-10px,20px,15px);
+}

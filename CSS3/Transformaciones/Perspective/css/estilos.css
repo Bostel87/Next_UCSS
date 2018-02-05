@@ -1,0 +1,15 @@
+div {
+  border: 1px solid black;
+  width: 150px;
+  height: 100px;
+  background-color: cyan;
+  margin-top: 60px;
+  margin-left: 90px;
+}
+
+#elemento {
+  /* Esta es una perspectiva a un elemento individual */
+  transform:  perspective(129px)
+              rotateX(-30deg)
+              rotateY(45deg);
+}
