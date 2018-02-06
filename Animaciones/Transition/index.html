@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width:device-width, user-scalable=no">
+    <title>Animacion y propiedades</title>
+    <style media="screen">
+      #contenedor {
+        width: 1000px;
+        height: 600px;
+        border: 2px solid;
+        margin: 0 auto;
+        background-color: blue;
+        /* con esto le decimos al navegador que realice una transicion cuando cambiemos el fondo
+         de nuestro elemento y que la animacion dure 1 segundo */
+        transition: background-color 1s;
+      }
+      /* este es el evento que cambiara el fondo para poder ver la animacion */
+      /* #contenedor:hover {
+        background-color: yellow;
+      } */
+
+      #contenedor img {
+        width: 200px;
+        height: 200px;
+        /* aqui le damos transicion de manera horizontal */
+        /* transition: width, 1s; */
+
+        transition-property: width, height;
+        transition-duration: 2s, 4s;
+      }
+      /* el evento que ancha el balon al poner el puntero encima */
+      #contenedor img:hover{
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="contenedor">
+    <img src="img/balon-de-futbol.jpg" alt="Balon">
+    </section>
+  </body>
+</html>
